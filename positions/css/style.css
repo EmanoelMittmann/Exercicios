@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    /* position: fixed;mantém o conteudo fixo */
+    /* position:sticky; se mantem na posição de rolagem */
+    position: relative;
+    margin-top: 20vh;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.box{
+    /* position: absolute; se ajusta em relação a position relative
+    , senão se torna absoluto em relação ao body*/
+    width: 200px;
+    position: absolute;
+    height: 200px;
+    top: 50px;
+    left: 150px;
+    background-color: greenyellow;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+
+    <form action="#" method="POST" class="formlogin">
+        <fieldset>        
+            <legend>Dados pessoais</legend>
+
+            <label for="">Email</label>
+            <input type="text" required maxlength="10" placeholder="digite um email valido">
+            <br>
+            <label for="">numero de filhos</label>
+            <input type="number" min="0" max="1000">
+            <br>
+            <label for="">nascimento</label>
+            <input type="date" min="2018-01-30" max="2138-01-30">
+            <br>
+            <p>Sexo:</p>
+            <label>Masculino</label>
+            <input type="radio" name="sexo" value="M">
+            <label>Feminino</label>
+            <input type="radio" name="sexo" value="F">
+            <br>
+            <input type="hidden" name="expira" value="2018-12-30">
+                <select>
+                    <option value="o">selecione</option>
+                    <option value="SP">Sao paulo</option>
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="MG">Minas gerais</option>
+                </select>
+                <fieldset>
+
+                    <legend>Area de interesse</legend>
+
+                    <label><input type="checkbox" name="html" value="hmtl">HTML</label>
+                    <label><input type="checkbox" name="css" value="css">CSS</label>
+                    <label><input type="checkbox" name="js" value="js">JAVASCRIPT</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    <textarea style="resize: none;"name="msg" cols="30" rows="10"></textarea>
+                        <br>
+                    <textarea style="resize: none;"name="contrato" readonly cols="30" rows="10">Entra o texto do contrato que precisa ser aceito</textarea>
+                    <label><input type="checkbox"> li e aceito</label>
+                    
+                    <input type="range" min="0" max="10" step="2">
+                    <input type="time">
+                    <input type="color">
+                </fieldset>
+            <br>
+            <input type="submit" value="mandar">
+            <input type="reset" value="reset">
+            <input type="button" value="button">
+            
+        </fieldset>
+
+    </form>
+</body>
+</html>

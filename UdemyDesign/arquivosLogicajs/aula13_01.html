@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>lógica de programação com javascript</h1>
+
+    <button onclick="somar()">+</button>
+    <button onclick="diminuir()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
+    <div id="output"></div>
+
+    <script>
+        let num = parseFloat(prompt("digite um valor"));
+        var output = document.querySelector('#output');
+        escreve();
+
+        function escreve(){
+            var output = document.querySelector('#output');
+            output.innerHTML = num
+        }
+        
+        function somar(){
+            var m = parseFloat(prompt("Digite outro valor"));
+            num += m
+            escreve();
+        }
+        function diminuir(){
+            var n = parseFloat(prompt("Digite outro valor"));
+            num -= n
+            escreve();
+        }
+        function multiplicar(){
+            var o = parseFloat(prompt("Digite outro valor"));
+            num*=o
+            escreve();
+        }
+        function dividir(){
+            var p = parseFloat(prompt("Digite outro valor"));
+            num/=p 
+            escreve();
+        }
+
+    </script>
+</body>
+</html>

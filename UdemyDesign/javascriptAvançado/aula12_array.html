@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Curso de Javascript completo</h1>
+        <p>Lorem ipsum dolor sit Javascript adipisicing elit. Ipsa, accusantium sapiente aliquid illo alias suscipit harum beatae molestias eum asperiores tempore provident,</p>
+        <p>Lorem ipsum dolor sit Javascript adipisicing elit. Ipsa, accusantium sapiente aliquid illo alias suscipit harum beatae molestias eum asperiores tempore provident,</p>
+        <p>Lorem ipsum dolor sit Javascript adipisicing elit. Ipsa, accusantium sapiente aliquid illo alias suscipit harum beatae molestias eum asperiores tempore provident,</p>
+        <p>Lorem ipsum dolor sit Javascript adipisicing elit. Ipsa, accusantium sapiente aliquid illo alias suscipit harum beatae molestias eum asperiores tempore provident,</p>
+    </div>
+    <script>
+        var text = document.querySelectorAll('p');
+
+        for( var i = 0; i < text.length; i++){
+            var temJS = text[i].textContent.toLowerCase().indexOf('javascript') >= 1;
+            text[i].className = temJS ? 'destaque': '';
+        }
+        
+            
+        
+
+        
+    </script>
+</body>
+</html>
+ 

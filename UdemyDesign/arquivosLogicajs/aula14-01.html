@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>logica de programação com javascript</h1>
+
+    <button onclick="mostrarArea(largura, altura)">Mostrar</button>
+    <div id="output"></div>
+    <script>
+        var largura = prompt('Digite a largura')
+        largura = parseFloat(largura)
+        var altura = parseFloat(prompt("digite a altura"))
+        var output = document.querySelector('#output')
+
+        function mostrarArea(l, a){
+            var areaTotal = l * a
+
+            output.innerHTML= areaTotal
+        }
+    </script>
+</body>
+</html>

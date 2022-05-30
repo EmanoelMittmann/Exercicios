@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var arr = [1,20,2,3,4,'ffaad',5,20,'40'];
+
+        var sohNumeros = arr.every(function(el){
+            return typeof el === 'number';
+        });
+        console.log(sohNumeros);
+
+        var aoMenosUmNumero = arr.some(function(el){
+            return typeof el === 'number';
+        });
+        console.log(aoMenosUmNumero);
+
+        var numeros = arr.filter(function(el, i, arr){
+            return typeof el === 'number';
+        });
+        console.log(numeros)
+
+        arr.forEach(function(el, i, arr){
+            console.log('el= ',el,' i=', i,' - ', arr.toString())
+        })
+
+        var posicaoStr1 = arr.indexOf(20,5);
+        console.log('posicaoStr1 ',posicaoStr1)
+
+        var posicaoStr2 = arr.lastIndexOf(20,5);
+        console.log('posicaoStr2 ',posicaoStr2);
+    
+        console.log(numeros);
+        numeros = numeros.map(function(el, i, arr){
+            return el * i;
+        }); 
+        console.log(numeros);
+        
+        var arr2 = arr.concat(numeros, 'ola', 'arr2', 100)
+        console.log(arr2);
+
+        var str = arr2.join('--');
+        console.log(str)
+
+        arr.push('novo',' item');
+        console.log(arr);
+
+        var ult = arr.pop();
+        console.log(ult);
+
+        var primeiroItem = arr.shift();
+        console.log(typeof primeiroItem);
+
+        arr.unshift('true', 'false', 'unshift')
+        console.log(arr);
+
+        var somadeArr = arr.reduce(function(anterior, atual,i){
+            return anterior + atual +i;
+        });
+        console.log(numeros);
+        console.log(somadeArr)
+
+        var testeReduce = ['1','2','3','4','5'].reduceRight(function(i, a){
+            return i + a;
+        });
+        console.log(testeReduce);
+
+        var arr = [10,20,30];
+        arr.reverse()
+        console.log(arr);
+
+        console.log(arr2.slice(2,5));
+
+        arr2.splice(2,0,"limao",'melao')
+        console.log(arr2);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .teste{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript completo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptate beatae laudantium earum 
+    eligendi repellendus ducimus saepe consequatur odit ipsa. Possimus,
+    accusantium? Nam expedita cum sequi beatae? Hic, atque? 
+    Nam.</p>
+
+    <div class="teste2">apenas um teste</div>
+    <div class="teste">apenas um teste</div>
+    <script>
+
+        var $teste = document.querySelector('.teste')
+        var $teste2 = document.querySelector('.teste2')
+        var $p = document.querySelector('p');
+        // console.log('teste',$teste.style.background);
+
+        console.log('computado: ', getComputedStyle($teste).background)
+        // console.log('computado', getComputedStyle($p))
+        console.log($p.offsetHeight, $p.offsetLeft)
+        console.log($p.offsetWidth, $p.offsetTop)
+
+        console.log($teste2.offsetLeft, $teste2.offsetTop)
+        console.log($teste2.getBoundingClientRect())
+    </script>
+</body>
+</html>

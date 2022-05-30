@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 3px solid red;
+            padding: 25px;
+            position: relative;
+            margin: 25px;
+        }
+        div:before{
+            content: "before:";
+            background-color: #ccc;
+        }
+        div:after{
+           content:"";
+           background:red;
+           width: 25px;
+           height: 25px;
+           display: inline-block;
+           position:absolute;
+           bottom: 0;
+           right: 0;
+           border-radius: 10px 0 1px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div>Texto principal da div</div>
+
+    <article>
+        <h3>Titulo</h3>
+        <p>Paragrafo <a href="#">Apenas um
+            link com <b>Negrito</b></a></p>
+        <p>Paragrafo <a href="#" >Apenas um
+             link com <b>Negrito</b></a></p>
+        <p>Paragrafo <a href="#">Apenas um
+            link com <b>Negrito</b></a></p>
+    </article>
+    
+    <ul>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="http://serfrontend.com/qq.pdf">Link externo</a></li>
+        <li><a target="_blank" href="http://serfrontend.com">Link externo</a></li>
+        <li><a href="transition.html" title="veja exercicio anterior">link interno</a></li>
+       
+        
+    </ul>
+</body>
+</html>

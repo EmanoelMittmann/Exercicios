@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <div id="output"></div>
+    <script>
+        var output = document.querySelector('#output')
+
+        var livro = new Object();
+        livro.nome = " A pedra filosofal ";
+        livro.estoque = " 10un";
+        livro.preco = 20.00;
+        
+        livro.comprar = function(qtd){
+            if(!qtd){
+                qtd = 1;
+            }
+            console.log('comprou livro ')
+            this.estoque--
+            this.estoque = this.estoque - qtd
+            console.log(this.estoque);
+
+        }
+
+        var msg = '';
+
+        msg += 'nome: '+ livro.nome + '<br>';
+        msg += 'preco:'+ livro.preco + '<br>';
+        msg += 'estoque:'+ livro.estoque + '<br>';
+        
+        document.querySelector('#output').innerHTML = msg;
+    </script>
+</body>
+</html>
